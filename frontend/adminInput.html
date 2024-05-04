@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Image Data</title>
+</head>
+<body>
+    <h1>Add Image Data</h1>
+    <form id="imageForm" enctype="multipart/form-data" method="post">
+        <label for="imageInput">Image:</label>
+        <input type="file" id="imageInput" name="image">
+        <br>
+        <label for="imageName">Name:</label>
+        <input type="text" id="imageName" name="name" placeholder="Image Name">
+        <br>
+        <label for="imageDescription">Description:</label>
+        <input type="text" id="imageDescription" name="description" placeholder="Image Description">
+        <br>
+        <label for="imageDimensions">Dimensions:</label>
+        <input type="text" id="imageDimensions" name="dimensions" placeholder="Image Dimensions">
+        <br>
+        <button type="submit">Add Image</button>
+    </form>
+
+    <script src="./index.js" defer></script>
+</body>
+</html>

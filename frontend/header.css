@@ -1,0 +1,90 @@
+
+.pagination{
+    text-decoration: none;
+    color: #0e0d0d;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(105, 28, 28, 0.3);
+}
+
+
+.header {
+    background: url(./img//ausstellungBackgroundDark.png);
+    background-size: cover; /* Растягиваем изображение, чтобы оно полностью покрывало фон */
+    background-position: center; /* Выравниваем изображение по центру */
+    position: relative;
+    display: flex;
+    background-color: rgb(44, 44, 43);
+    height: 250px;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+.namelevel{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    
+}
+.headtext{
+    font-size: 50px;
+}
+.namelevel img{
+    overflow: hidden;
+    height: 40px;
+}
+
+.navi{
+    text-decoration: none;
+    color: #a39e9e;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(8, 8, 8, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.navi .links a {
+    text-decoration: none;
+    color: #d4bdbd;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(8, 8, 8, 0.3);
+}
+
+.links{
+    word-spacing: 20px; /* Увеличить расстояние между буквами */
+    
+}
+
+
+.naviicon img{
+    margin-right: 10px;
+    overflow: hidden;
+    height: 20px;
+    width: 23px;
+}
+
+.navilinks{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.background{
+    background-image: url('./img//bildBackground.png');
+    background-size: cover; /* Растягиваем изображение, чтобы оно полностью покрывало фон */
+    background-position: center; /* Выравниваем изображение по центру */
+    width: 100%; /* Ширина элемента, чтобы фон был виден на всю ширину страницы */
+    height: 250px; /* Высота элемента, здесь укажите нужную высоту */
+}

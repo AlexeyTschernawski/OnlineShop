@@ -1,0 +1,147 @@
+
+body {
+    background-color: rgb(216, 216, 188);
+}
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+            
+        }
+
+        .item {
+            width: calc(25% - 20px);
+            /* ------3 in a row */
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .item img {
+            max-width: 100%;
+            height: auto;
+            transition: filter 0.3s ease;
+            /* изменение фильтра при наведении в секундах */
+        }
+
+        .item:hover img {
+            filter: brightness(50%);
+            /* затемняет, короче уменьшает яркость в процентах */
+        }
+
+        .description {
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .item:hover .description {
+            opacity: 1;
+        }
+
+        .nametext{
+            display: flex;
+            flex-direction: column;
+            padding-top: 6px;
+        }
+        .nametext1{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+            text-align: center;
+        }
+        .nametext2{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+            text-align: center;
+        }
+        .nametext3{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        /* header and footer */
+        header,
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* modal window */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            margin: 10% auto;
+            padding: 80px;
+            max-width: 700px;
+            background-color: #fefefe;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #aaa;
+            cursor: pointer;
+        }
+
+        .modal-content img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .pagination button,
+        .pagination span#pageCounter {
+        text-decoration: none;
+        color: #928f8f;
+        font-size: 20px;
+        text-align: center;
+        text-shadow: 0 1px 3px rgba(8, 8, 8, 0.3);
+        }
+        a{
+            text-decoration: none;
+            color: #1d1c1c;
+            font-size: 20px;
+            text-align: center;
+            text-shadow: 0 1px 3px rgba(8, 8, 8, 0.3);  
+        }
+
+        .pagination span#pageCounter::first-line {
+            color: #928f8f; /* Цвет для цифр */
+            font-weight: bold; /* Жирный шрифт */
+        }
+
+        .current-page {
+            color: rgb(192, 76, 9); /* Change to your desired color */
+            text-shadow: 0 1px 3px rgba(8, 8, 8, 0.3);
+            font-size: 22px;
+        }
+
+        .totalPages{
+            color: black;
+        }

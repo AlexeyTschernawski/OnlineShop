@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #3a3636;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+
+.header {
+    display: flex;
+    background-color: bisque;
+    height: 350px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.namelevel{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+.headtext{
+    font-size: 40px;
+}
+.namelevel img{
+    overflow: hidden;
+    height: 40px;
+}
+
+.navi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.naviicon img{
+    overflow: hidden;
+    height: 20px;
+    width: 24px;
+}
+
+.navilinks{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.background{
+    width: 100;
+}
+.background img{
+    overflow: hidden;
+   
+}
+
+.content-wrapper {
+    display: flex;
+    height: 600px;
+    margin-bottom: 10px;
+    background-color: bisque;
+    
+}
+.main{
+    display: flex;
+    flex-grow: 2;
+    height: 100%;
+    width: 300px;
+    
+}
+.biographytext{
+    margin-top: 30px;
+    padding: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+    text-align: center;
+}
+
+.aside{
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+}
+.nametext{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.nametext1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-align: center;
+}
+.nametext2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+}
+.nametext3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+}
+.foto{
+    display: flex;
+    height: 75%;
+    justify-content: center;
+    
+}
+.foto img{
+    overflow: hidden;
+   max-height: 350px; 
+}
+
+.footer {
+    background-color: rgb(204, 204, 115);
+    height: 50px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

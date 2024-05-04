@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./header.css">
+
+    <script src="./backend/myjsonfile.json" defer></script>
+    <script src="./modalPic.js" defer></script>
+    
+    <title>Art Galerry</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="namelevel">
+            <img src="./img//gallery_logo.jpg" alt="logo">
+            <div class="headtext">Muster Mustermann</div>
+        
+        </div>
+        <div class="navi">
+            <div class="navi-container">
+                <div class="naviicon">
+                    <img src="./img//home-4-32.gif" alt="phone">
+                    <img src="./img//email-32.png" alt="phone">
+                    <img src="./img/phone-32.gif" alt="phone">
+                </div>
+            </div>
+            <div class="navi-container">
+                <div class="navilinks">
+                    <div class="links">
+                        <a href="#" class="current-page">home</a>
+                        <a href="./gallery/gallery.html">gallery</a>
+                        <a href="./biography/biography.html">biography</a>
+                        <a href="./exhibitions/exhibitions.html">exhibitions</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="background">
+        </div>
+
+    </header>
+
+    <div class="pagination">
+        <button id="prevPageBtn"><<<<<<</button>
+        <span id="pageCounter"></span>
+        <button id="nextPageBtn">>>>>>></button>
+        
+    </div>
+    <div class="container" id="imageContainer"></div>
+    
+
+        
+    <!-- modal window -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-img" src="" alt="zoom picture">
+            <div class="description">
+                <p> FULL description: ABOUT <span id="modal-description"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Нижняя навигация -->
+    <div class="pagination bottom-navigation">
+        <button id="prevPageBtnBottom"><<<<<<</button>
+        <span id="pageCounterBottom"></span>
+        <button id="nextPageBtnBottom">>>>>>></button>
+    </div>
+
+    <footer>
+        <p>contant Information</p>
+    </footer>
+    
+    
+        
+
+</body>
+
+</html>
